@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <h3>Transcripcion</h3>
+    <textarea id="transcript" readonly></textarea>
+    <div>
+      <button id="startBtn">Escuchar</button>
+      <button id="stopBtn" disabled>Dejar de Escuchar</button>
+    </div>
+    <h3>Respuesta</h3>
+    <p id="messageLabel"></p>
+    <div id="loader"></div>
+    <h3>Razonamiento</h3>
+    <p id="Razonamiento"></p>
+    <script type="module" src="/src/peticiones_True-Stream.ts"></script>
+    <script src="/src/recorder.js"></script>
+  </body>
+</html>
